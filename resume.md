@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Resume
 ---
 
 ## Education
@@ -111,7 +110,7 @@ See all publications on [Google Scholar](https://scholar.google.com/citations?us
 
  - **J. Huddleston**, J. R. Barnes, T. Rowe, X. Xu, R. Kondor, D. E. Wentworth, L. Whittaker, B. Ermetal, R. S. Daniels, J. W. McCauley, S. Fujisaki, K. Nakamura, N. Kishida, S. Watanabe, H. Hasegawa, I. Barr, K. Subbarao, R. A. Neher, and T. Bedford. Integrating genotypes and phenotypes improves long-term forecasts of seasonal influenza A/H3N2 evolution. bioRxiv, Jun 2020.
 
- - S. K. Hilton\*, **J. Huddleston**\*, A. Black, K. North, A. S. Dingens, T. Bedford, and J. D. Bloom. dms-view: Interactive visualization tool for deep mutational scanning data. bioRxiv, May 2020.
+ - S. K. Hilton\*, **J. Huddleston**\*, A. Black, K. North, A. S. Dingens, T. Bedford, and J. D. Bloom. dms-view: Interactive visualization tool for deep mutational scanning data. Journal of Open Source Software, 5(52):2353, 2020.
 
  - J. M. Lee\*, **J. Huddleston**\*, et al. Deep mutational scanning of hemagglutinin helps predict evolutionary fates of human H3N2 influenza variants. Proc. Natl. Acad. Sci. U.S.A., 115(35):E8276-E8285, Aug 2018.
 
@@ -133,7 +132,7 @@ See all publications on [Google Scholar](https://scholar.google.com/citations?us
 
  - T. Bedford, **J. Huddleston**, et al. Seasonal influenza circulation patterns and projections for September 2019 to September 2020. bioRxiv, 2019.
 
- - B. I. Potter, R. Garten, J. Hadfield, **J. Huddleston**, et al. Evolution and rapid spread of a reassortant A(H3N2) virus that predominated the 2017-2018 influenza season. Virus Evolution, accepted.
+ - B. I. Potter, R. Kondor, J. Hadfield, **J. Huddleston**, J. Barnes, T. Rowe, L. Guo, X. Xu, R. A. Neher, T. Bedford, and D. E. Wentworth. Evolution and rapid spread of a reassortant A(H3N2) virus that predominated the 2017-2018 influenza season. Virus Evolution, 5(2), 12 2019. vez046.
 
  - J. Hadfield, C. Megill, S. M. Bell, **J. Huddleston**, et al. Nextstrain: real-time tracking of pathogen evolution. Bioinformatics, page bty407, May 2018.
 
