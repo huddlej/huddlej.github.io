@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: paper
 title: "dms-view: Interactive visualization tool for deep mutational scanning data"
 date: 2020-05-15
 image_url: hilton-dms-view.png

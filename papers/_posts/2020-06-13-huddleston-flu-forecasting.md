@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: paper
 title: Integrating genotypes and phenotypes improves long-term forecasts of seasonal influenza A/H3N2 evolution
 date: 2020-06-13
 image_url: huddleston-flu-forecasting.png
