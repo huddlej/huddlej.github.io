@@ -104,7 +104,7 @@ Western Washington University, Bellingham, WA
 
 See all publications on [Google Scholar](https://scholar.google.com/citations?user=KCqa_hUAAAAJ).
 
-### First-author publications
+### First-author publications <small class="text-muted">(\* indicates shared first authorship)</small>
 
 \* indicates shared first authorship.
 
