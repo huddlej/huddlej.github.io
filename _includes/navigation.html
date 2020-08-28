@@ -1,3 +1,25 @@
+<div class="row mt-2">
+  <div class="col-4">
+    <img src="images/huddlej-headshot.jpg" class="img-thumbnail rounded" alt="John Huddleston" />
+  </div>
+
+  <div class="col-8">
+    <h1>John Huddleston</h1>
+
+    <ul style="padding-inline-start: 0">
+      <li>Computational biologist in <a href="http://bedford.io">Trevor Bedford's lab</a></li>
+      <li><a href="https://mcb-seattle.edu/student-profile/?uid=97">PhD candidate in Molecular and Cell Biology</a> at the University of Washington, MS in computer science and biology</li>
+      <li>Software developer for <a href="http://nextstrain.org">Nextstrain</a></li>
+      <li><a href="https://carpentries.org/instructors/">Certified Carpentries instructor</a></li>
+    </ul>
+
+    <p>
+      <a class="badge badge-light" href="http://github.com/huddlej"><img src="images/GitHub-Mark-32px.png" style="width: 20%" alt="@huddlej on GitHub" /> @huddlej</a>
+      <a class="badge badge-light" href="https://scholar.google.com/citations?user=KCqa_hUAAAAJ"><img src="images/google-scholar.svg" style="width: 18px" alt="Publications on Google Scholar" /> Google Scholar</a>
+    </p>
+  </div>
+</div>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2 mb-2">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -5,8 +27,8 @@
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="/">Home</a>
-      <a class="nav-item nav-link" href="/resume.html">Resume</a>
+      <a class="nav-item nav-link{% if page.url == "/" %} active{% endif %}" href="/">Home</a>
+      <a class="nav-item nav-link{% if page.url == "/resume.html" %} active{% endif %}" href="/resume.html">Resume</a>
     </div>
   </div>
 </nav>
