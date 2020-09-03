@@ -1,10 +1,10 @@
 ---
 layout: paper
 title: Integrating genotypes and phenotypes improves long-term forecasts of seasonal influenza A/H3N2 evolution
-journal: bioRxiv
+journal: eLife
 authors: Huddleston, et al.
-status: posted
-date: 2020-06-13
+status: published
+date: 2020-09-02
 image_url: huddleston-flu-forecasting.png
 excerpt_separator: <!--more-->
 ---
@@ -13,5 +13,5 @@ Rapid mutation of seasonal influenza's hemagglutinin protein allows viruses to e
 We developed a novel framework that forecasts influenza evolution by combining fitness estimates from experimental assays and genomic data.
 We found that experimental measurements of antigenic drift provide more accurate forecasts than genomic data alone.
 
-[Read the full paper](https://www.biorxiv.org/content/10.1101/2020.06.12.145151v1).
+[Read the full paper](https://elifesciences.org/articles/60067).
 <!--more-->

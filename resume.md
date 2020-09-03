@@ -106,7 +106,7 @@ See all publications on [Google Scholar](https://scholar.google.com/citations?us
 
 ### First-author publications <small class="text-muted">(\* indicates shared first authorship)</small>
 
- - **J. Huddleston**, J. R. Barnes, T. Rowe, X. Xu, R. Kondor, D. E. Wentworth, L. Whittaker, B. Ermetal, R. S. Daniels, J. W. McCauley, S. Fujisaki, K. Nakamura, N. Kishida, S. Watanabe, H. Hasegawa, I. Barr, K. Subbarao, R. A. Neher, and T. Bedford. Integrating genotypes and phenotypes improves long-term forecasts of seasonal influenza A/H3N2 evolution. eLife, accepted.
+ - **J. Huddleston**, J. R. Barnes, T. Rowe, X. Xu, R. Kondor, D. E. Wentworth, L. Whittaker, B. Ermetal, R. S. Daniels, J. W. McCauley, S. Fujisaki, K. Nakamura, N. Kishida, S. Watanabe, H. Hasegawa, I. Barr, K. Subbarao, P. Barrat-Charlaix, R. A. Neher, and T. Bedford. Integrating genotypes and phenotypes improves long-term forecasts of seasonal influenza A/H3N2 evolution. eLife, 9:e60067, Sep 2020.
 
  - S. K. Hilton\*, **J. Huddleston**\*, A. Black, K. North, A. S. Dingens, T. Bedford, and J. D. Bloom. dms-view: Interactive visualization tool for deep mutational scanning data. Journal of Open Source Software, 5(52):2353, 2020.
 
