@@ -13,5 +13,5 @@ Rapid mutation of seasonal influenza's hemagglutinin protein allows viruses to e
 We developed a novel framework that forecasts influenza evolution by combining fitness estimates from experimental assays and genomic data.
 We found that experimental measurements of antigenic drift provide more accurate forecasts than genomic data alone.
 
-[Read the full paper](https://elifesciences.org/articles/60067).
+[Read the full paper](https://elifesciences.org/articles/60067) or [the associated blog post](https://bedford.io/blog/predicting-seasonal-influenza-evolution/).
 <!--more-->
