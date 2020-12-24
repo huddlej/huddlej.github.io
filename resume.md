@@ -5,7 +5,7 @@ title: Resume
 
 ## Education
 
- - Ph.D., Molecular and Cell Biology, University of Washington, 2020.
+ - Ph.D., Molecular and Cellular Biology, University of Washington, 2020.
  - Master of Science, Biology, Western Washington University, 2013.
  - Master of Science, Computer Science, Western Washington University, 2007.
  - Bachelor of Science, Computer Science, Western Washington University, 2006.
