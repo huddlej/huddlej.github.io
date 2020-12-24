@@ -5,14 +5,17 @@ title: Resume
 
 ## Education
 
- - Ph.D., Molecular and Cell Biology, University of Washington, late 2020 (anticipated).
+ - Ph.D., Molecular and Cell Biology, University of Washington, 2020.
  - Master of Science, Biology, Western Washington University, 2013.
  - Master of Science, Computer Science, Western Washington University, 2007.
  - Bachelor of Science, Computer Science, Western Washington University, 2006.
 
 ## Professional experience
 
-### Graduate Research Assistant <small class="text-muted">September 2016 - present</small>
+### Staff Scientist <small class="text-muted">December 2020 - present</small>
+Fred Hutchinson Cancer Research Center (FHCRC), Seattle, WA
+
+### Graduate Research Assistant <small class="text-muted">September 2016 - December 2020</small>
 University of Washington (UW) / Fred Hutchinson Cancer Research Center (FHCRC), Seattle, WA
 
  - Design, implement, and draft manuscripts for independent research projects
