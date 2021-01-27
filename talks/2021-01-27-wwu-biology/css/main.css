@@ -109,3 +109,7 @@ section#title h1 {
 .acknowledgments li {
     font-size: 50%;
 }
+
+.resources li {
+    margin-bottom: 0.5em;
+}
