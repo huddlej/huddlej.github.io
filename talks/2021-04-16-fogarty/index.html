@@ -1,0 +1,721 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Improved forecasts and visualization of seasonal influenza evolution</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/simple.css" id="theme">
+		<link rel="stylesheet" href="css/main.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+		<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.1"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section id="title" data-background-image="images/title-slide-frequencies-borders.png" data-background-size="cover" data-background-color="#999999">
+					<h1>Improved forecasts of seasonal influenza evolution</h1>
+
+					John Huddleston, PhD<br />
+					<small>April 16, 2021</small><br />
+					<small><a href="https://huddlej.github.io/talks/2021-04-16-fogarty">https://huddlej.github.io/talks/2021-04-16-fogarty</a></small>
+                </section>
+
+				<section>
+					<h1>Hemagglutinin is the primary target of our immune system</h1>
+
+					<div><img src="images/simple-influenza-virion-diagram-step-03.png" style="width: 80%" /></div>
+				</section>
+
+				<section>
+					<h1>Mutations in hemagglutinin allow viruses to escape existing immunity</h1>
+
+					<div><img src="images/simple-influenza-virion-diagram-step-04.png" style="width: 80%" /></div>
+				</section>
+
+				<section>
+					<h1>Mutations in hemagglutinin allow viruses to escape existing immunity</h1>
+
+					<div><img src="images/simple-influenza-virion-diagram-step-05.png" style="width: 80%" /></div>
+				</section>
+
+				<section>
+					<h1>New vaccines take ~9 months to make and distribute</h1>
+
+					<div><img src="images/vaccine-development-timeline.png" style="width: 100%" /></div>
+				</section>
+
+				<section>
+					<h1>The Global Influenza Surveillance and Response System tracks influenza year-round</h1>
+
+					<div>
+						<img src="images/GISRS_map.jpg" alt="Map of World Health Organization Global Influenza Surveillance and Response System" />
+					</div>
+
+					<div class="citation">
+						<a href="https://www.who.int/influenza/gisrs_laboratory/GISRS_map.jpg?ua=1">World Health Organization</a>
+					</div>
+				</section>
+
+				<section>
+					<h1>Hemagglutination inhibition (HI) assays identify viruses that could escape our immunity</h1>
+
+					<div>
+						<img src="images/hemagglutination-inhibition-assays.png" alt="HI assays" style="width: 70%" />
+					</div>
+
+					<div class="citation">
+						After <a href="https://www.cdc.gov/flu/about/professionals/antigenic.htm">CDC's antigenic characterization Figure 2</a>
+					</div>
+				</section>
+
+				<section>
+					<h1>Surveillance groups also sequence viral genomes</h1>
+
+					<div>
+						<img src="images/flu-sequences.png" alt="influenza sequences" />
+					</div>
+				</section>
+
+				<section>
+					<h1>Viruses with shared mutations form<br />clades in the viral phylogeny</h1>
+
+					<div>
+						<img src="images/nextstrain_flu_seasonal_h3n2_ha_2y_clades.svg" alt="phylogenies reveal closely related groups of viruses" style="width: 100%" />
+					</div>
+
+					<div class="citation">
+						<a href="https://nextstrain.org/flu/seasonal/h3n2/ha/2y">nextstrain.org</a>
+					</div>
+				</section>
+
+				<section>
+					<h1>Rapid branching in trees indicates<br />recent clade success</h1>
+
+					<div>
+						<img src="images/nextstrain_flu_seasonal_h3n2_ha_2y_lbi.svg" alt="local branching index indicates recent (and maybe future) success" style="width: 100%" />
+					</div>
+
+					<div class="citation">
+						Neher et al. 2014
+					</div>
+				</section>
+
+				<section>
+					<h1>Change in clade frequency<br />also measures recent success</h1>
+
+					<div>
+						<img src="images/change-in-frequency.png" alt="change in clade frequency measures recent success" style="width: 100%" />
+					</div>
+				</section>
+
+				<section>
+					<h1>Change in clade frequency<br />also measures recent success</h1>
+
+					<div>
+						<img src="images/change-in-frequency-annotated.png" alt="change in clade frequency measures recent success" style="width: 100%" />
+					</div>
+				</section>
+
+				<section>
+					<h1>Clades with beneficial mutations could be successful in the future</h1>
+
+					<div>
+						<img src="images/luksza_lassig_clades_with_mutations.png" alt="clades with beneficial mutations succeed in the next season" style="width: 60%" />
+					</div>
+
+					<div class="citation">
+						Luksza and Lassig 2014
+					</div>
+				</section>
+
+				<section>
+					<h1 class="narrow">Mutations that rapidly rise to 100% global frequency might be beneficial</h1>
+
+					<div>
+						<img src="images/mutational-sweeps-at-site-189.png" alt="mutational sweeps at site HA1 189 from Shih et al. 2007" style="width: 100%" />
+					</div>
+
+					<div class="citation">
+						Shih et al. 2007
+					</div>
+				</section>
+
+				<section>
+					<h1 class="narrow">Epitope and non-epitope mutations might distinguish beneficial and detrimental effects</h1>
+
+					<table>
+						<tr>
+							<td>
+								<img src="images/epitope-mutations.png" alt="epitope mutations" style="width: 200px" /><br />
+								<small>Epitope sites</small>
+							</td>
+
+							<td>
+								<img src="images/non-epitope-mutations.png" alt="non-epitope mutations" style="width: 200px" /><br />
+								<small>Non-epitope sites</small>
+							</td>
+						</tr>
+					</table>
+
+					<div class="citation">
+						Shih et al. 2007<br />Luksza and Lassig 2014
+					</div>
+				</section>
+
+				<section>
+					<h1>Deep mutational scanning (DMS) enables high-throughput measurements of mutational effects</h1>
+
+					<div class="thumbnails">
+						<p>
+							<img src="images/juhye-lee.jpg" alt="Juhye Lee" /><br />
+							Juhye Lee
+						</p>
+						<p>
+							<img src="images/jesse-bloom.jpg" alt="Jesse Bloom" /><br />
+							Jesse Bloom
+						</p>
+					</div>
+
+					<div class="citation">
+						Photos: Robert Hood / Fred Hutch News Service
+					</div>
+				</section>
+
+				<section>
+					<section>
+						<h1>Deep mutational scanning (DMS) enables high-throughput measurements of mutational effects</h1>
+
+						<div>
+							<img src="images/deep-mutational-scanning.png" alt="schematic of deep mutational scanning assay for influenza viruses" />
+						</div>
+
+						<div class="citation">
+							Lee and Huddleston et al. 2018
+						</div>
+					</section>
+
+					<section>
+						<h1>Juhye Lee measured mutational effects in seasonal influenza H3N2</h1>
+
+						<div>
+							<img src="images/h3n2-dms-preferences.png" alt="DMS preferences for influenza H3N2" style="width: 70%" />
+						</div>
+
+						<div class="citation">
+							Lee and Huddleston et al. 2018
+						</div>
+					</section>
+
+					<section>
+						<section>
+							<h1>Juhye Lee measured mutational effects in seasonal influenza H3N2</h1>
+
+							<div>
+								<img src="images/h3n2-dms-preferences-zoom.png" alt="DMS preferences for influenza H3N2" style="width: 100%" />
+							</div>
+
+							<div class="citation">
+								Lee and Huddleston et al. 2018
+							</div>
+						</section>
+
+					</section>
+
+					<section>
+						<h1>DMS preferences estimate mutational effects</h1>
+
+						<div>
+							<img src="images/mutational-effects.png" alt="mutational effects by DMS" style="width: 50%" />
+						</div>
+
+						<div class="citation">
+							Lee and Huddleston et al. 2018
+						</div>
+					</section>
+
+					<section>
+						<h1>DMS preferences estimate mutational effects</h1>
+
+						<div>
+							<img src="images/mutational-effects-example.png" alt="mutational effects by DMS" style="width: 50%" />
+						</div>
+
+						<div class="citation">
+							Lee and Huddleston et al. 2018
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h1>Can we make better influenza forecasts?</h1>
+
+					<div class="thumbnails">
+						<p>
+							<img src="images/richard-neher.png" alt="Richard Neher" /><br />
+							Richard Neher
+						</p>
+						<p>
+							<img src="images/trevor-bedford.jpg" alt="Trevor Bedford" /><br />
+							Trevor Bedford
+						</p>
+					</div>
+
+					<div class="citation">
+						Photo (right): Robert Hood / Fred Hutch News Service
+					</div>
+				</section>
+
+				<section>
+					<h1>Genetic and experimental metrics<br />estimate viral fitness</h1>
+
+					<div>
+						<img src="images/fitness-metrics-revised.png" alt="fitness metrics for seasonal influenza H3N2" style="width: 75%" />
+					</div>
+				</section>
+
+				<section>
+					<h2>Models estimate future populations by projecting forward current populations</h2>
+
+					<div><img src="images/distance-based-fitness-model-step-00.png" style="margin: 0; width: 80%" /></div>
+
+					<div class="citation">
+						Huddleston et al. 2020
+					</div>
+				</section>
+
+              	<section>
+					<h2>Models estimate future populations by projecting forward current populations</h2>
+
+					<div><img src="images/distance-based-fitness-model-step-01.png" style="margin: 0; width: 80%" /></div>
+
+					<div class="citation">
+						Huddleston et al. 2020
+					</div>
+				</section>
+
+				<section>
+					<section>
+						<h2>Models estimate future populations by projecting forward current populations</h2>
+
+						<div><img src="images/distance-based-fitness-model-step-02.png" style="margin: 0; width: 80%" /></div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1>Virus populations grow exponentially by fitness</h1>
+
+						<div>
+							<img src="images/comparison-of-fitness-effects.svg" alt="comparison of strains with different relative fitnesses over time" style="width: 100%" />
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h2>Models estimate future populations by projecting forward current populations</h2>
+
+					<div><img src="images/distance-based-fitness-model-step-03.png" style="margin: 0; width: 80%" /></div>
+
+					<div class="citation">
+						Huddleston et al. 2020
+					</div>
+				</section>
+
+				<section>
+					<h2>Models estimate future populations by projecting forward current populations</h2>
+
+					<div><img src="images/distance-based-fitness-model.png" style="margin: 0; width: 80%" /></div>
+
+					<div class="citation">
+						Huddleston et al. 2020
+					</div>
+				</section>
+
+				<section>
+					<h1>Earth mover's distance accounts for frequency and genetic distance between populations</h1>
+
+					<div>
+						<img src="images/earth-movers-distance.svg" alt="example of earth mover's distance for two influenza populations" style="width: 65%" />
+					</div>
+
+					<div class="citation">
+						Rubner et al. 1998
+					</div>
+				</section>
+
+				<section>
+					<h1>Earth mover's distance accounts for frequency and genetic distance between populations</h1>
+
+					<div>
+						<img src="images/earth-movers-distance-with-flow.svg" alt="example of earth mover's distance flow between two influenza populations" style="width: 65%" />
+					</div>
+
+					<div class="citation">
+						Rubner et al. 1998
+					</div>
+				</section>
+
+
+				<section>
+					<h1>Accurate forecasts minimize earth mover's distance between populations</h1>
+
+					<div>
+						<img src="images/earth-movers-distance-with-forecast.svg" alt="example of earth mover's distance flow between estimated and observed future influenza populations" style="width: 65%" />
+					</div>
+				</section>
+
+				<section>
+					<h1>Time-series cross-validation enables test of model accuracy with out-of-sample forecasts</h1>
+
+					<div>
+						<img src="images/training-validation-and-testing.png" alt="training, validation, and testing for forecasting models" />
+					</div>
+
+					<div class="citation">
+						Huddleston et al. 2020
+					</div>
+				</section>
+
+				<section>
+					<section>
+						<h1>Distance to the future through time revealed model accuracies</h1>
+
+						<iframe frameborder="0" data-src="distances-to-future.html" data-preload style="width: 100%; height: 500px"></iframe>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1>Naive model and optimum set bounds for model accuracy</h1>
+
+						<div>
+							<img src="images/naive-model-and-lower-bound.svg" alt="" style="margin-left: 3em; width: 100%; height: 100%"/>
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1>Epitope mutations metric works when you know the sites in advanced</h1>
+
+						<div>
+							<img src="images/oracle-outperforms-epitopes.svg" alt="" style="margin-left: 3em; width: 100%"/>
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1>HI outperformed epitope mutations</h1>
+
+						<div>
+							<img src="images/hi-outperforms-epitopes.svg" alt="" style="margin-left: 3em; width: 100%; height: 100%"/>
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1>Mutational load outperformed DMS mutational effects</h1>
+
+						<div>
+							<img src="images/mutational-load-outperforms-dms.svg" alt="" style="margin-left: 3em; width: 100%"/>
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1>Local branching index outperformed recent change in frequency</h1>
+
+						<div>
+							<img src="images/lbi-outperforms-delta-frequency.svg" alt="" style="margin-left: 3em; width: 100%"/>
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1>Composite models outperformed individual models</h1>
+
+						<div>
+							<img src="images/composite-models-outperform-individual-models.svg" alt="" style="margin-left: 3em; width: 100%"/>
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1>HI and mutational load outperformed other composite models on test data</h1>
+
+						<div>
+							<img src="images/hi-and-mutational-load-makes-best-model.svg" alt="" style="margin-left: 3em; width: 100%"/>
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1>Coefficients through time revealed model consistency</h1>
+
+						<iframe frameborder="0" data-src="coefficients-for-individual-models.html" data-preload style="width: 100%; height: 500px"></iframe>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1 class="narrow">Models partially capture clade growth dynamics</h1>
+
+						<div>
+							<img src="images/absolute-clade-error.png" alt="absolute clade error from best model's forecasts by initial clade frequency" style="width: 55%" />
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1 class="narrow">Models capture clade growth dynamics</h1>
+
+						<div>
+							<img src="images/observed-and-estimated-frequency-fold-change.png" alt="observed and estimated frequency fold change" style="width: 55%" />
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>How well can models identify a single strain for the vaccine?</h1>
+
+						<div>
+							<img src="images/distance-to-the-future-per-strain.png" alt="weighted distance to the estimated future per strain" style="width: 100%" />
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1>How well can models identify a single strain for the vaccine?</h1>
+
+						<iframe frameborder="0" style="width: 800px; height: 600px" data-src="https://nextstrain.org/community/blab/flu-forecasting/flu/seasonal/h3n2/ha/2y?c=weighted_distance_to_future_by_cTiter_x-ne_star&d=tree&p=full&onlyPanels&sidebar=closed"></iframe>
+					</section>
+
+					<section>
+						<h1>Estimated closest strains to the future are often among the observed closest</h1>
+
+						<div>
+							<img src="images/ranks-of-estimated-closest-strains.png" alt="observed ranks of estimated closest strains to the future" style="width: 50%" />
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1>Estimated and observed strain ranks correlate</h1>
+
+						<div>
+							<img src="images/observed-and-estimated-strain-ranks.png" alt="observed and estimated strain ranks based on observed and estimated distances to the future" style="width: 60%" />
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Models could have selected strains closer to the future than selected vaccine strains</h1>
+
+						<div>
+							<img src="images/vaccine-strain-comparison.png" alt="comparison of selected vaccine strains to observed and estimated closest strains to the future" style="width: 100%" />
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1>Best model outperforms naive model when ranking all strains</h1>
+
+						<div>
+							<p style="float: left; width: 47%">
+								<img src="images/observed-and-estimated-strain-ranks.png" alt="observed and estimated strain ranks by best model" style="width: 100%; margin-bottom: 0" /><br />
+								<span style="margin-left: 2em">HI + mutational load</span>
+							</p>
+
+							<p style="float: left; width: 47%">
+								<img src="images/observed-and-estimated-strain-ranks-by-naive-model.png" alt="observed and estimated strain ranks by naive model" style="width: 100%; margin-bottom: 0" /><br />
+								<span style="margin-left: 2em">naive</span>
+							</p>
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+    			</section>
+
+				<section>
+					<section>
+						<h1>Nextstrain provides real-time influenza forecasts</h1>
+
+						<div>
+							<img src="images/nextstrain-forecasts.png" alt="Nextstrain now provides real-time influenza forecasts" style="width: 100%" />
+						</div>
+
+						<div class="citation">
+							Huddleston et al. 2020
+						</div>
+					</section>
+
+					<section>
+						<h1>Nextstrain provides real-time influenza forecasts</h1>
+
+						<iframe frameborder="0" style="width: 800px; height: 600px" data-src="https://nextstrain.org/community/blab/flu-forecasting/flu/seasonal/h3n2/ha/2y?d=tree,frequencies&p=full&onlyPanels&sidebar=closed"></iframe>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>We can still improve forecasting models</h1>
+
+						<div class="thumbnails square">
+							<p>
+								<img src="images/model-uncertainty-example.png" alt="example of potential model uncertainty" />
+								<small>Improve estimates of model uncertainty</small>
+							</p>
+
+							<p>
+								<img src="images/cropped-delay-example.png" alt="delay between collection and submission of sequences in days" />
+								<small>Account for delays in data availability</small>
+							</p>
+
+							<p>
+								<img src="images/migration-example.png" alt="migration example" />
+								<small>Model migration rates between regions</small>
+							</p>
+
+							<p>
+								<img src="images/human-immune-landscape-example.png" alt="model human immune landscapes" />
+								<small>Model the human immune landscape</small>
+							</p>
+						</div>
+					</section>
+
+					<section>
+						<h1>Few influenza sequences have been collected during the pandemic</h1>
+
+						<div>
+							<img src="images/nextstrain-recent-data.svg" alt="few sequences are available during the pandemic" style="width: 100%; margin-left: 2em" />
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h2>Thank you!</h2>
+
+					<table class="acknowledgments">
+					<tr>
+						<td>
+							<p>Fred Hutch Cancer<br />Research Center</p>
+
+							<ul>
+								<li>Trevor&nbsp;Bedford</li>
+								<li>Juhye Lee</li>
+								<li>Jesse Bloom</li>
+							    <li>Erick Matsen</li>
+								<li>Bing Brunton</li>
+								<li>Harmit Malik</li>
+							</ul>
+						</td>
+
+						<td>
+							<p>Collaborators</p>
+
+							<ul>
+								<li>Richard Neher</li>
+								<li>David Wentworth</li>
+								<li>Rebecca Kondor</li>
+							</ul>
+
+							<p>Data Sources</p>
+
+							<ul>
+								<li>GISAID</li>
+								<li>WHO GISRS Network</li>
+							</ul>
+						</td>
+						<td>
+							<p>Funding</p>
+							<ul>
+								<li>NIH/NIAID F31 AI140714</li>
+								<li>NIH/NIAID R01 AI127893-01</li>
+							</ul>
+						</td>
+					</tr>
+					</table>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+
+				transition: 'none',
+				controlsTutorial: false,
+				slideNumber: true
+			});
+		</script>
+	</body>
+</html>

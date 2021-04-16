@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Untitled</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+            your experience.
+            </p>
+        <![endif]-->
+
+        <div id="vis"></div>
+        <script type="text/javascript">
+         var yourVlSpec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 600,
+  "height": 400,
+  "config": {
+    "axisX": {"labelFontSize": 20, "titleFontSize": 20},
+    "axisY": {"labelFontSize": 20, "titleFontSize": 20},
+    "legend": {
+      "labelLimit": 300,
+      "labelFontSize": 14,
+      "titleFontSize": 14
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/blab/flu-forecasting/master/manuscript/Table_7-source_data_2.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.model != 'DMS entropy' & datum.model != 'DMS mutational load' & datum.model != 'Wolf epitope antigenic novelty' & datum.model != 'Koel epitope antigenic novelty' & datum.model != 'epitope ancestor' & datum.model != 'epitope ancestor + mutational load' & datum.model != 'epitope antigenic novelty + mutational load'"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": false,
+        "stroke": "transparent",
+        "tooltip": true
+      },
+      "selection": {
+        "model": {
+          "type": "multi",
+          "fields": ["model"],
+          "bind": "legend",
+          "init": [{"model": ""}]
+        }
+      },
+      "encoding": {
+        "x": {"field": "timepoint", "type": "temporal", "title": "Date"},
+        "y": {
+          "field": "model_distance_to_future",
+          "type": "quantitative",
+          "title": "Distance to the future (AAs)"
+        },
+        "color": {
+          "field": "model",
+          "sort": [
+            "epitope antigenic novelty",
+            "oracle antigenic novelty",
+            "HI antigenic novelty",
+            "mutational load",
+            "DMS mutational effects",
+            "LBI",
+            "delta frequency",
+            "HI antigenic novelty + mutational load",
+            "mutational load + LBI",
+            "HI antigenic novelty + mutational load + LBI"
+          ]
+        }
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "#999999"},
+      "encoding": {
+        "x": {"field": "timepoint", "type": "temporal"},
+        "y": {"field": "optimal_distance_to_future", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [
+        {"filter": "datum.model == 'HI antigenic novelty + mutational load'"}
+      ],
+      "mark": {"type": "line", "color": "#CCCCCC"},
+      "encoding": {
+        "x": {"field": "timepoint", "type": "temporal"},
+        "y": {"field": "naive_distance_to_future", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [
+        {"filter": {"selection": "model"}},
+        {"filter": {"field": "timepoint", "timeUnit": "year", "lt": "2015"}}
+      ],
+      "mark": {
+        "type": "line",
+        "point": {
+          "size": 100
+        },
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {"field": "timepoint", "type": "temporal", "title": "Date"},
+        "y": {
+          "field": "model_distance_to_future",
+          "type": "quantitative",
+          "title": "Distance to the future (AAs)"
+        },
+        "color": {
+          "field": "model",
+          "scale": {"scheme": "tableau10"},
+          "sort": [
+            "epitope antigenic novelty",
+            "oracle antigenic novelty",
+            "HI antigenic novelty",
+            "mutational load",
+            "DMS mutational effects",
+            "LBI",
+            "delta frequency",
+            "HI antigenic novelty + mutational load",
+            "mutational load + LBI",
+            "HI antigenic novelty + mutational load + LBI"
+          ]
+        }
+      }
+    },
+    {
+      "transform": [
+        {"filter": {"selection": "model"}},
+        {"filter": {"field": "timepoint", "timeUnit": "year", "gte": "2015"}}
+      ],
+      "mark": {
+        "type": "line",
+        "point": {
+          "filled": false,
+          "fill": "white",
+          "size": 100
+        },
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {"field": "timepoint", "type": "temporal", "title": "Date"},
+        "y": {
+          "field": "model_distance_to_future",
+          "type": "quantitative",
+          "title": "Distance to the future (AAs)"
+        },
+        "color": {
+          "field": "model",
+          "sort": [
+            "epitope antigenic novelty",
+            "oracle antigenic novelty",
+            "HI antigenic novelty",
+            "mutational load",
+            "DMS mutational effects",
+            "LBI",
+            "delta frequency",
+            "HI antigenic novelty + mutational load",
+            "mutational load + LBI",
+            "HI antigenic novelty + mutational load + LBI"
+          ]
+        }
+      }
+    }
+  ]
+};
+
+         vegaEmbed('#vis', yourVlSpec);
+        </script>
+    </body>
+</html>
