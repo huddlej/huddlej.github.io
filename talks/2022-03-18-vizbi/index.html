@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Improved forecasts and visualization of seasonal influenza evolution</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/simple.css" id="theme">
+		<link rel="stylesheet" href="css/main.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+		<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.1"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section id="title" data-background-image="images/nextstrain_flu_seasonal_h3n2_ha_2005-2010.svg" data-background-size="110%" data-background-position="120px 90px" data-background-color="#FFFFFF">
+					<h1>Visualization of seasonal influenza antigenic evolution</h1>
+
+					<div style="background-color: white; opacity: 85%">
+						<p style="margin-bottom: 0.75em; font-size: 1em">John Huddleston, PhD</p>
+						<p>Bedford Lab</p>
+						<p>Fred Hutchinson Cancer Research Center</p>
+						<p>March 18, 2022</p>
+						<p><a href="https://huddlej.github.io/talks/2022-03-18-vizbi">https://huddlej.github.io/talks/2022-03-18-vizbi</a></p>
+					</div>
+                </section>
+
+				<section>
+					<h1>Seasonal influenza kills 100,000s<br />of people every year</h1>
+
+					<p><img src="images/flu-patient.jpg" alt="influenza patient" style="width: 75%" /></p>
+					<p class="citation">Photo: <a href="https://whohqphotos.lightrocketmedia.com/preview/54928">WHO / Tom Pietrasik</a></p>
+				</section>
+
+				<section>
+					<h1>Surface proteins determine<br />influenza virus subtypes like H3N2</h1>
+
+					<div><img src="images/simple-influenza-virion-diagram-step-01.png" style="width: 80%" /></div>
+				</section>
+
+				<section>
+					<h1>Hemagglutinin enables infection</h1>
+
+					<div><img src="images/simple-influenza-virion-diagram-step-02.png" style="width: 80%" /></div>
+				</section>
+
+				<section>
+					<h1>Hemagglutinin is the primary target of our immune system</h1>
+
+					<div><img src="images/simple-influenza-virion-diagram-step-03.png" style="width: 80%" /></div>
+				</section>
+
+				<section>
+					<h1>Mutations in hemagglutinin allow viruses to escape existing immunity</h1>
+
+					<div><img src="images/simple-influenza-virion-diagram-step-04.png" style="width: 80%" /></div>
+				</section>
+
+				<section>
+					<h1>Mutations in hemagglutinin allow viruses to escape existing immunity</h1>
+
+					<div><img src="images/simple-influenza-virion-diagram-step-05.png" style="width: 80%" /></div>
+				</section>
+
+				<section>
+					<h1>New vaccines take ~9 months<br />to make and distribute</h1>
+
+					<div><img src="images/vaccine-development-timeline.png" style="width: 100%" /></div>
+				</section>
+
+				<section>
+					<h1>The Global Influenza Surveillance and Response System tracks influenza year-round</h1>
+
+					<div>
+						<img src="images/GISRS_map.jpg" alt="Map of World Health Organization Global Influenza Surveillance and Response System" />
+					</div>
+
+					<div class="citation">
+						<a href="https://www.who.int/influenza/gisrs_laboratory/GISRS_map.jpg?ua=1">World Health Organization</a>
+					</div>
+				</section>
+
+				<section>
+					<h1>Surveillance groups sequence<br />the genetic code of viruses</h1>
+
+					<div>
+						<img src="images/flu-sequences.png" alt="influenza sequences" />
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Mutations in viral genomes tag specific viruses</h1>
+
+					<div>
+						<img src="images/mutations-tag-viruses.svg" alt="mutations tag viruses" style="width: 85%" />
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Mutations allow us to reconstruct viral trees</h1>
+
+					<div>
+						<img src="images/mutations-enable-reconstruction-of-trees.svg" alt="mutations enable reconstruction of viral trees" style="width: 85%" />
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Visualizing genomes as an inferred genealogy reveals related groups of viruses</h1>
+
+					<div>
+						<img src="images/nextstrain_flu_seasonal_h3n2_ha_2y_clades.svg" alt="phylogenies reveal closely related groups of viruses" style="width: 100%" />
+					</div>
+
+					<div class="citation">
+						<a href="https://nextstrain.org/flu/seasonal/h3n2/ha/2y">nextstrain.org</a>
+					</div>
+				</section>
+
+				<section>
+					<h1 style="display: flex; align-items: flex-end">Which single virus should be in the next vaccine?</h1>
+
+					<div>
+						<img src="images/nextstrain_flu_seasonal_h3n2_ha_2y_clades.svg" alt="phylogenies reveal closely related groups of viruses" style="width: 100%" />
+					</div>
+
+					<div class="citation">
+						<a href="https://nextstrain.org/flu/seasonal/h3n2/ha/2y">nextstrain.org</a>
+					</div>
+				</section>
+
+				<section>
+					<h1>Experimental assays identify viruses<br />that could escape our immunity</h1>
+
+					<div>
+						<img src="images/hemagglutination-inhibition-assays.png" alt="HI assays" style="width: 70%" />
+					</div>
+
+					<div class="citation">
+						After <a href="https://www.cdc.gov/flu/about/professionals/antigenic.htm">CDC's antigenic characterization Figure 2</a>
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Assays provide antigenic distances</h1>
+
+					<div>
+						<img src="images/antigenic-distance-schematic.svg" alt="schematic of antigenic distances by experimental assays" style="width: 85%" />
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Historically, distances were viewed as tables</h1>
+
+					<div>
+						<img src="images/hi-table.png" alt="HI assays" style="width: 100%" />
+					</div>
+
+					<div class="citation">
+						After <a href="https://www.pnas.org/doi/full/10.1073/pnas.1525578113">Neher et al. 2016</a>
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Visualization as tables does not scale well</h1>
+
+					<div>
+						<img src="images/vcm-binder.jpg" alt="Binder of VCM materials" style="width: 60%" />
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Antigenic cartography reduces<br />high dimensionality</h1>
+
+					<div>
+						<img src="images/smith-2004-antigenic-map.png" alt="antigenic cartography of H3N2 HI titers" style="width: 25%" />
+					</div>
+
+					<div class="citation">
+						<a href="https://www.science.org/doi/10.1126/science.1097211">Smith et al. 2004</a> (<a href="https://www.antigenic-cartography.org/Science-2004/">raw data and coordinates</a>)
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Bayesian antigenic cartography integrates<br />assays and genetic data</h1>
+
+					<div>
+						<img src="images/bedford-2014-antigenic-map.jpg" alt="Bayesian antigenic cartography of H3N2 HI titers and genomes" style="width: 100%" />
+					</div>
+
+					<div class="citation">
+						<a href="https://elifesciences.org/articles/01914">Bedford et al. 2014</a>
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Antigenic trees map assays to phylogenies<br />and infer missing data</h1>
+
+					<div>
+						<img src="images/neher-2016-antigenic-tree.jpg" alt="antigenic tree colored by inferred antigenic distance from H3N2 HI titers" style="width: 70%" />
+					</div>
+
+					<div class="citation">
+						<a href="https://www.pnas.org/doi/full/10.1073/pnas.1525578113">Neher et al. 2016</a>
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Antigenic trees synthesize all assay data<br />into a single visualization</h1>
+
+					<div>
+						<img src="images/antigenic-tree-with-all-data.png" alt="antigenic tree colored by inferred antigenic distance from H3N2 HI titers" style="width: 90%" />
+					</div>
+
+					<div class="citation">
+						<a href="">nextstrain.org</a>
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Scatterplot trees encode antigenic distance<br />on a positional axis</h1>
+
+					<div>
+						<img src="images/antigenic-scatterplot-with-all-data.png" alt="antigenic scatterplot colored by inferred antigenic distance from H3N2 HI titers" style="width: 90%" />
+					</div>
+
+					<div class="citation">
+						<a href="">nextstrain.org</a>
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Matrix view emphasizes coverage by<br />each serum of test viruses by clade</h1>
+
+					<div>
+						<img src="images/example-titer-matrix.svg" alt="matrix of mean titer values between reference sera (y-axis) and test viruses in recent clades titers" style="width: 80%" />
+					</div>
+
+					<div class="citation">
+						Data from <a href="https://elifesciences.org/articles/01914">Bedford et al. 2014</a>
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Distribution view communicates uncertainty about coverage of test viruses by clade</h1>
+
+					<div>
+						<img src="images/example-titer-distributions.png" alt="distributions of mean +/- 89% confidence intervals by reference serum and test clades" style="width: 70%" />
+					</div>
+
+					<div class="citation">
+						Data from <a href="https://elifesciences.org/articles/01914">Bedford et al. 2014</a>
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Distributions with raw data reveal details about coverage of test viruses by clade</h1>
+
+					<div>
+						<img src="images/example-titer-distributions-and-raw-data.png" alt="raw distances and distributions of mean +/- 89% confidence intervals by reference serum and test clades" style="width: 70%" />
+					</div>
+
+					<div class="citation">
+						Data from <a href="https://elifesciences.org/articles/01914">Bedford et al. 2014</a>
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Interactive visualizations support<br />multiple views on the data</h1>
+
+					<div>
+						<img src="images/example-titer-view-display.svg" alt="interactive visualization of antigenic distances from H3N2 HI titers" style="width: 100%" />
+					</div>
+
+					<div class="citation">
+						Data from <a href="https://elifesciences.org/articles/01914">Bedford et al. 2014</a>
+					</div>
+				</section>
+
+				<section>
+					<h1 style="height: auto">Composite tree and measurements views provide all information required for decision making</h1>
+
+					<div>
+						<img src="images/example-tree-measurements-frequencies-view.png" alt="interactive visualization of tree and antigenic distances from H3N2 HI titers in Auspice" style="width: 95%" />
+					</div>
+
+					<div class="citation">
+						Data from <a href="https://elifesciences.org/articles/01914">Bedford et al. 2014</a>
+					</div>
+				</section>
+
+				<section>
+					<h1>Implementation complexity hinders<br />domain-specific visualizations</h1>
+
+					<div>
+						<img src="images/data-visualization-challenges.svg" alt="domain-specific visualizations often require complex implementations" style="width: 85%" />
+					</div>
+				</section>
+
+				<section>
+					<h1>Thank you!</h1>
+
+					<table class="acknowledgments">
+					<tr>
+						<td>
+							<p>Fred&nbsp;Hutch&nbsp;Cancer<br />Research&nbsp;Center</p>
+
+							<ul>
+								<li>Trevor&nbsp;Bedford</li>
+								<li>Allison Black</li>
+								<li>Jover Lee</li>
+								<li>James Hadfield</li>
+								<li>Thomas Sibley</li>
+							</ul>
+						</td>
+
+						<td>
+							<p>Collaborators</p>
+
+							<ul>
+								<li>Richard Neher</li>
+								<li>David Wentworth</li>
+								<li>Rebecca Kondor</li>
+							</ul>
+
+							<p>Data Sources</p>
+
+							<ul>
+								<li>GISAID</li>
+								<li>WHO GISRS Network</li>
+							</ul>
+						</td>
+						<td>
+							<p>Funding</p>
+							<ul>
+								<li>NIH/NIAID R01 AI127893-01</li>
+								<li>NIAID Centers of Excellence for Influenza Research and Response (CEIRR)</li>
+								<li>Bill and Melinda Gates Foundation</li>
+							</ul>
+						</td>
+					</tr>
+					</table>
+				</section>
+
+				<section>
+					<h1>Continue the conversation</h1>
+
+					<div>
+						<p>By email at <a href="mailto:jhuddles@fredhutch.org">jhuddles@fredhutch.org</a></p>
+						<p>In public at <a href="http://discussion.nextstrain.org">discussion.nextstrain.org</a></p>
+						<p>In private at <a href="mailto:hello@nextstrain.org">hello@nextstrain.org</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+
+				transition: 'none',
+				controlsTutorial: false,
+				slideNumber: true
+			});
+		</script>
+	</body>
+</html>
