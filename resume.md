@@ -179,7 +179,7 @@ See all publications on [Google Scholar](https://scholar.google.com/citations?us
  - 2021 (July–August): Eslam Abousamra, "Estimating effects of vaccination on lineage-specific effective reproduction numbers of SARS-CoV-2", Fred Hutch Summer Undergraduate Research Program (SURP).
  - 2019–present: Sravani Nanduri, "Genetic cartography reveals ancestral relationships of human pathogenic viruses", Fred Hutch Summer High School Internship (SHIP) Program and independent continuing mentorship.
  - 2019 (July–August): Dorien Simon, "Calculating expected number of transitions between geographic states in a phylogeny in a given amount of time", Fred Hutch Summer High School Intership (SHIP) Program.
- - 2018: Ashley Anderson, MiT, "Developing a curriculum about the genomic epidemiology (April–July) of Ebola virus for high school students", Fred Hutch Science Education Partnership
+ - 2018 (April–July): Ashley Anderson, MiT, "Developing a curriculum about the genomic epidemiology of Ebola virus for high school students", Fred Hutch Science Education Partnership
 (SEP).
 
 ## Scientific outreach and teaching experience
