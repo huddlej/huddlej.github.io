@@ -146,6 +146,7 @@ See all publications on [Google Scholar](https://scholar.google.com/citations?us
 
 ## Talks
 
+ - "[Patterns of seasonal influenza circulation in 2022](https://nextstrain.org/community/narratives/huddlej/seasonal-flu-reports/2022-05-31)". [Centers of Excellence for Influenza Research and Response (CEIRR) Network](https://www.ceirr-network.org/) Lecture Series. June 2022.
  - "[Visualization of seasonal influenza antigenic evolution](https://huddlej.github.io/talks/2022-03-18-vizbi/)". Invited speaker at [Visualizing Biological Data (VIZBI)](https://vizbi.org/2022/). Online. March 2022.
  - "Nextstrain’s tools for the genomic epidemiology of SARS-CoV-2", Models of Infectious Disease Agent Study (MIDAS) Network Meeting. Online. May 2021.
  - "Integrative forecasting of seasonal influenza A/H3N2 evolution by genotype and phenotype", Epidemics: 7th International Conference on Infectious Disease Dynamics, Charleston, SC. December 2019.
