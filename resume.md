@@ -130,7 +130,11 @@ See all publications on [Google Scholar](https://scholar.google.com/citations?us
 
  - **J. Huddleston** and J. Zhang. Effects of musically meaningful operators in evolutionary composition. In Proceedings of the International Computer Music Conference, volume 1, pages 220-223. International Computer Music Association, 2007.
 
-### Recent co-author publications
+### Selected co-author publications
+
+ - K. E. Kistler, **J. Huddleston**, and T. Bedford. Rapid and parallel adaptive mutations in spike S1 drive clade success in SARS-CoV-2. Cell Host Microbe, 30(4):545–555, 04 2022.
+
+ - P. Barrat-Charlaix, **J. Huddleston**, T. Bedford, and R. A. Neher. Limited predictability of amino acid substitutions in seasonal influenza viruses. Mol Biol Evol, 38(7):2767–2777, Jun 2021.
 
  - T. Bedford, A. L. Greninger, P. Roychoudhury, L. M. Starita, M. Famulare, M. Huang, A. Nalla, G. Pepper, A. Reinhardt, H. Xie, L. Shrestha, T. N. Nguyen, A. Adler, E. Brandstetter, S. Cho, D. Giroux, P. D. Han, K. Fay, C. D. Frazar, M. Ilcisin, K. Lacombe, J. Lee, A. Kiavand, M. Richardson, T. R. Sibley, M. Truong, C. R. Wolf, D. A. Nickerson, M. J. Rieder, J. A. Englund, the Seattle Flu Study Investigators, J. Hadfield, E. B. Hodcroft, **J. Huddleston**, L. H. Moncla, N. F. Mu ̈ller, R. A. Neher, X. Deng, W. Gu, S. Federman, C. Chiu, J. Duchin, R. Gautom, G. Melly, B. Hiatt, P. Dykema, S. Lindquist, K. Queen, Y. Tao, A. Uehara, S. Tong, D. MacCannell, G. L. Armstrong, G. S. Baird, H. Y. Chu, J. Shendure, and K. R. Jerome. Cryptic transmission of SARS-CoV-2 in Washington State. Science, Sep 2020.
 
@@ -140,32 +144,26 @@ See all publications on [Google Scholar](https://scholar.google.com/citations?us
 
  - J. Hadfield, C. Megill, S. M. Bell, **J. Huddleston**, et al. Nextstrain: real-time tracking of pathogen evolution. Bioinformatics, page bty407, May 2018.
 
- - C. M. Alexandre, J. R. Urton, K. Jean-Baptiste, **J. Huddleston**, et al. Complex relationships between chromatin accessibility, sequence divergence, and gene expression in Arabidopsis thaliana. Mol. Biol. Evol., 35(4):837–854, Apr 2017.
-
 ## Talks
 
-"Integrative forecasting of seasonal influenza A/H3N2 evolution by genotype and phenotype", Epidemics: 7th International Conference on Infectious Disease Dynamics, Charleston, SC. Scheduled for December 2019.
-
-"Integrative forecasting of seasonal influenza A/H3N2 evolution by genotype and phenotype", Models of Infectious Disease Agent Study (MIDAS) Network Meeting, Bethesda, MD. May 2019.
-
-"Structural variation detection and genotyping in human genomes", Pacific Biosciences User Group Meeting (West Coast), Palo Alto, CA. 2015.
-
-"Reconstructing complex regions of genomes using long-read sequencing technology", Pacific Biosciences User Group Meeting (West Coast), Menlo Park, CA. 2013.
-
-"Programming LEGO robots in Linux", Linuxfest Northwest, Bellingham, WA. 2008.
+ - "[Visualization of seasonal influenza antigenic evolution](https://huddlej.github.io/talks/2022-03-18-vizbi/)". Invited speaker at [Visualizing Biological Data (VIZBI)](https://vizbi.org/2022/). Online. March 2022.
+ - "Nextstrain’s tools for the genomic epidemiology of SARS-CoV-2", Models of Infectious Disease Agent Study (MIDAS) Network Meeting. Online. May 2021.
+ - "Integrative forecasting of seasonal influenza A/H3N2 evolution by genotype and phenotype", Epidemics: 7th International Conference on Infectious Disease Dynamics, Charleston, SC. December 2019.
+ - "Integrative forecasting of seasonal influenza A/H3N2 evolution by genotype and phenotype", Models of Infectious Disease Agent Study (MIDAS) Network Meeting, Bethesda, MD. May 2019.
+ - "Structural variation detection and genotyping in human genomes", Pacific Biosciences User Group Meeting (West Coast), Palo Alto, CA. 2015.
+ - "Reconstructing complex regions of genomes using long-read sequencing technology", Pacific Biosciences User Group Meeting (West Coast), Menlo Park, CA. 2013.
+ - "Programming LEGO robots in Linux", Linuxfest Northwest, Bellingham, WA. 2008.
 
 ## Posters
 
-"Integrated forecasts of seasonal influenza A/H3N2 evolution", From Molecular Basis to Predictability and Control of Evolution, NORDITA Institute, Stockholm, Sweden. July 2019.
-
-"Single molecule sequencing of a human genome reveals novel structural variation that is highly variable in human populations", American Genetics Association (AGA), Seattle, WA. 2014.
-
-"Evolutionary relationships of cytochrome P450s implicated in apple maggot host specificity", EVO-WIBO, Port Townsend, WA. 2012.
-
-"Effects of musically meaningful operators in evolutionary composition.", International Computer Music Conference (ICMC), Copenhagen, Denmark. 2007.
+ - "Integrated forecasts of seasonal influenza A/H3N2 evolution", From Molecular Basis to Predictability and Control of Evolution, NORDITA Institute, Stockholm, Sweden. July 2019.
+ - "Single molecule sequencing of a human genome reveals novel structural variation that is highly variable in human populations", American Genetics Association (AGA), Seattle, WA. 2014.
+ - "Evolutionary relationships of cytochrome P450s implicated in apple maggot host specificity", EVO-WIBO, Port Townsend, WA. 2012.
+ - "Effects of musically meaningful operators in evolutionary composition.", International Computer Music Conference (ICMC), Copenhagen, Denmark. 2007.
 
 ## Awards and funding
 
+ - R01 to improve long-term influenza forecasting (6R01AI165821-02)
  - Dr. Paul Neiman Outstanding Graduate Student Award. 2019.
  - Ruth L. Kirschstein National Research Service Award (NRSA) F31. 2019.
  - Finalist for National Defense Science and Engineering Graduate Fellowship (top 200 of 3,600 applicants). 2018.
@@ -174,6 +172,15 @@ See all publications on [Google Scholar](https://scholar.google.com/citations?us
  - Graduate Tuition Fee Waiver Scholarship: Spring 2006 - Spring 2007
  - First Prize in Computer Science Department Robot Competition: Spring 2006
  - Western Washington University President's List: Fall 2003, Fall 2005
+
+## Mentorship
+
+ - 2022 (July–August): Allison Li, "Adaptive evolution of norovirus", Fred Hutch Summer Undergraduate Research Program (SURP).
+ - 2021 (July–August): Eslam Abousamra, "Estimating effects of vaccination on lineage-specific effective reproduction numbers of SARS-CoV-2", Fred Hutch Summer Undergraduate Research Program (SURP).
+ - 2019–present: Sravani Nanduri, "Genetic cartography reveals ancestral relationships of human pathogenic viruses", Fred Hutch Summer High School Internship (SHIP) Program and independent continuing mentorship.
+ - 2019 (July–August): Dorien Simon, "Calculating expected number of transitions between geographic states in a phylogeny in a given amount of time", Fred Hutch Summer High School Intership (SHIP) Program.
+ - 2018: Ashley Anderson, MiT, "Developing a curriculum about the genomic epidemiology (April–July) of Ebola virus for high school students", Fred Hutch Science Education Partnership
+(SEP).
 
 ## Scientific outreach and teaching experience
 
