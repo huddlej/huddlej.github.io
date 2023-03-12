@@ -1,0 +1,243 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Timeline</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Built with https://github.com/vasturiano/timelines-chart -->
+        <script src="https://unpkg.com/timelines-chart"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+            your experience.
+            </p>
+        <![endif]-->
+
+        <div id="timeline">
+        </div>
+
+        <script>
+        const myChart = TimelinesChart();
+        myChart(document.getElementById("timeline"))
+          .zScaleLabel("Scale Units")
+          .zQualitative(true)
+          .rightMargin(200)
+          .data([
+              {
+                  group: "Life",
+                  data: [
+                      {
+                          label: "Self-taught programming",
+                          data: [
+                              {
+                                  timeRange: [new Date("1995 Jan 1"), new Date("2002 Jan 1")],
+                                  val: "Programming"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Volunteer on moths website",
+                          data: [
+                              {
+                                  timeRange: [new Date("2008 Nov 1"), new Date("2009 Dec 1")],
+                                  val: "Programming"
+                              },
+                              {
+                                  timeRange: [new Date("2010 Sep 1"), new Date("2012 Feb 1")],
+                                  val: "Programming"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Volunteer at raptor center",
+                          data: [
+                              {
+                                  timeRange: [new Date("2009 Aug 1"), new Date("2011 Jun 1")],
+                                  val: "Biology"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Husband",
+                          data: [
+                              {
+                                  timeRange: [new Date("2008 Oct 12"), new Date()],
+                                  val: "Family"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Dad",
+                          data: [
+                              {
+                                  timeRange: [new Date("2014 Oct 3"), new Date()],
+                                  val: "Family"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Pandemic",
+                          data: [
+                              {
+                                  timeRange: [new Date("2020 Jan 1"), new Date()],
+                                  val: "Biology"
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  group: "School",
+                  data: [
+                      {
+                          label: "High school",
+                          data: [
+                              {
+                                  timeRange: [new Date("1997 Jan 1"), new Date("1998 Jan 1")],
+                                  val: "Biology"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Undergrad in New Mexico",
+                          data: [
+                              {
+                                  timeRange: [new Date("2001 Jun 1"), new Date("2002 May 1")],
+                                  val: "Programming"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Undergrad at UW",
+                          data: [
+                              {
+                                  timeRange: [new Date("2002 Jun 1"), new Date("2003 Jun 1")],
+                                  val: "Physics"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Undergrad at WWU",
+                          data: [
+                              {
+                                  timeRange: [new Date("2003 Sep 1"), new Date("2006 Dec 1")],
+                                  val: "Programming"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Masters at WWU",
+                          data: [
+                              {
+                                  timeRange: [new Date("2006 Dec 1"), new Date("2007 Dec 1")],
+                                  val: "Programming"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Postbac at WWU",
+                          data: [
+                              {
+                                  timeRange: [new Date("2008 Jan 1"), new Date("2010 Jun 1")],
+                                  val: "Biology"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Masters at WWU",
+                          data: [
+                              {
+                                  timeRange: [new Date("2010 Sep 1"), new Date("2013 Jun 1")],
+                                  val: "Biology"
+                              }
+                          ]
+                      },
+                      {
+                          label: "PhD at UW",
+                          data: [
+                              {
+                                  timeRange: [new Date("2016 Sep 1"), new Date("2020 Dec 1")],
+                                  val: "Computational Biology"
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  group: "Work",
+                  data: [
+                      {
+                          label: "Web developer",
+                          data: [
+                              {
+                                  timeRange: [new Date("1998 Jan 1"), new Date("2000 Jan 1")],
+                                  val: "Programming"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Student web developer",
+                          data: [
+                              {
+                                  timeRange: [new Date("2004 Feb 1"), new Date("2006 Nov 1")],
+                                  val: "Programming"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Professional web developer",
+                          data: [
+                              {
+                                  timeRange: [new Date("2006 Nov 1"), new Date("2010 Sep 1")],
+                                  val: "Programming"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Moth photographer",
+                          data: [
+                              {
+                                  timeRange: [new Date("2009 Dec 1"), new Date("2010 Sep 1")],
+                                  val: "Biology"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Teaching assistant",
+                          data: [
+                              {
+                                  timeRange: [new Date("2010 Sep 1"), new Date("2011 Jun 1")],
+                                  val: "Biology"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Bioinformatics specialist",
+                          data: [
+                              {
+                                  timeRange: [new Date("2011 Jun 1"), new Date("2016 Sep 1")],
+                                  val: "Computational Biology"
+                              }
+                          ]
+                      },
+                      {
+                          label: "Staff scientist",
+                          data: [
+                              {
+                                  timeRange: [new Date("2020 Dec 1"), new Date()],
+                                  val: "Computational Biology"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ]);
+        </script>
+    </body>
+</html>
