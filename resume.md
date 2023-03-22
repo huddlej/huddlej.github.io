@@ -107,8 +107,13 @@ Western Washington University, Bellingham, WA
 ## Publications
 
 See all publications on [Google Scholar](https://scholar.google.com/citations?user=KCqa_hUAAAAJ).
+\* indicates shared first authorship.
 
-### First-author publications <small class="text-muted">(\* indicates shared first authorship)</small>
+### Senior-author publications
+
+- J. Lee\*, J. Hadfield\*, A. Black, T. R. Sibley, R. A. Neher, T. Bedford, **J. Huddleston**. Joint visualization of seasonal influenza serology and phylogeny to inform vaccine composition. Front. Bioinform., Volume 3, Mar 2023.
+
+### First-author publications
 
  - **J. Huddleston**, J. Hadfield, T. R. Sibley, J. Lee, K. Fay, M. Ilcisin, E. Harkins, T. Bedford, R. A. Neher, and E. B. Hodcroft. Augur: a bioinformatics toolkit for phylogenetic analyses of human pathogens. Journal of Open Source Software, 6(57):2906, Jan 2021.
 
