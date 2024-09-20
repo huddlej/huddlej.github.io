@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Timely vaccine strain selection and genomic surveillance improves evolutionary forecast accuracy of seasonal influenza A/H3N2</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/simple.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="title" data-background-color="#FFFFFF">
+					<h1>Timely vaccine strain selection and genomic surveillance improves evolutionary forecast accuracy of seasonal influenza A/H3N2</h1>
+
+					<div style="background-color: white; opacity: 85%">
+						<p style="margin-bottom: 0.75em; font-size: 1em">John Huddleston, PhD</p>
+						<p>Bedford Lab</p>
+						<p>Fred Hutchinson Cancer Center</p>
+						<p>September 30, 2024</p>
+						<p><a href="https://huddlej.github.io/talks/2024-09-30-options">https://huddlej.github.io/talks/2024-09-30-options</a></p>
+					</div>
+				</section>
+
+				<section>
+					<h1>Seasonal influenza vaccines remain the best protection against hospitalization and death</h1>
+
+					<p><img src="images/flu-patient.jpg" alt="influenza patient" style="width: 75%" /></p>
+					<p class="citation">Photo: <a href="https://whohqphotos.lightrocketmedia.com/preview/54928">WHO / Tom Pietrasik</a></p>
+				</section>
+
+				<section>
+					<h1>New vaccines take approximately 9 months to make and distribute</h1>
+
+					<div><img src="images/vaccine-development-timeline.png" style="width: 100%" /></div>
+
+					<p class="citation">After Trevor Bedford and <a href="https://doi.org/10.1016/j.tim.2017.09.004">Morris et al. 2018</a></p>
+				</section>
+
+				<section>
+					<h1>The Global Influenza Surveillance and Response System tracks influenza year-round</h1>
+
+					<div>
+						<img src="images/GISRS_map.jpg" alt="Map of World Health Organization Global Influenza Surveillance and Response System" />
+					</div>
+
+					<div class="citation">
+						<a href="https://www.who.int/influenza/gisrs_laboratory/GISRS_map.jpg?ua=1">World Health Organization</a>
+					</div>
+				</section>
+
+				<section>
+					<h1>In the past, we have trained models ignoring lags in sequence availability</h1>
+
+					<div>
+						<img src="images/submissions_no_lag_only.png" style="width: 85%" alt="" />
+					</div>
+				</section>
+
+				<section>
+					<h1>In practice, sequence availability lags by ~3 months on average</h1>
+
+					<div>
+						<img src="images/submissions_observed.png" style="width: 85%" alt="" />
+					</div>
+				</section>
+
+				<section>
+					<h1>What if we could reduce forecast horizons to less than 12 months?</h1>
+
+					<div>
+						<img src="images/horizons.png" style="width: 85%" alt="" />
+					</div>
+				</section>
+
+				<section>
+					<h1>Reducing lags decreases distances between predicted and observed future populations</h1>
+
+					<div>
+						<img src="images/h3n2_distances_to_the_future_by_delay_and_horizon.png" style="width: 85%" alt="Distance to the future in amino acids by forecast horizon and sequence submission lag" />
+					</div>
+				</section>
+
+				<section>
+					<h1>Reducing submission lags improves estimates of current clade frequencies</h1>
+
+					<div>
+						<img src="images/h3n2_all_current_frequency_errors_by_delay.png" style="width: 100%" alt="Current clade frequencies without sequence submission lag (x-axis) compared to ideal lag (left, y-axis) and realistic lag (right, y-axis)." />
+					</div>
+				</section>
+
+				<section>
+					<h1>Reducing submission lags improves estimates of current clade frequencies</h1>
+
+					<div>
+						<img src="images/h3n2_current_frequency_error_distributions_by_delay_for_small_clades.png" style="width: 100%" alt="Distribution of current clade frequencies errors for small clades (&lt;10%) with ideal (orange) or realistic (green) sequence submission lags." />
+					</div>
+				</section>
+
+				<section>
+					<h1>Reducing submission lags improves estimates of current clade frequencies</h1>
+
+					<div>
+						<img src="images/h3n2_current_frequency_error_distributions_by_delay_for_large_clades.png" style="width: 100%" alt="Distribution of current clade frequencies errors for large clades (&ge;10%) with ideal (orange) or realistic (green) sequence submission lags." />
+					</div>
+				</section>
+
+				<section>
+					<h1>Reducing forecast horizons increases accuracy and precision of clade frequency forecasts</h1>
+
+					<div>
+						<img src="images/h3n2_absolute_forecast_frequency_errors_by_delay_and_horizon_for_large_clades.png" style="width: 100%" alt="Distribution of current clade frequencies errors for large clades (&ge;10%) with ideal (orange) or realistic (green) sequence submission lags." />
+					</div>
+				</section>
+
+				<section>
+					<h1>Faster vaccine selection is the most effective realistic intervention</h1>
+
+					<div>
+						<img src="images/h3n2_effects_of_realistic_interventions.png" style="width: 100%" alt="Effects of realistic interventions on forecast accuracy for H3N2 populations." />
+					</div>
+				</section>
+
+				<section>
+					<h1>Faster vaccine and surveillance perform best with a perfect forecast</h1>
+
+					<div>
+						<img src="images/h3n2_optimal_effects_of_realistic_interventions_on_distances_to_the_future.png" style="width: 100%" alt="Effects of realistic interventions on forecast accuracy for H3N2 populations." />
+					</div>
+				</section>
+
+				<section>
+					<h1>Conclusions</h1>
+
+					<div>
+						<ol>
+							<li>faster vaccine development improves our predictions of the future</li>
+							<li>faster genomic surveillance improves our understanding of the present</li>
+						</ol>
+					</div>
+				</section>
+
+				<section>
+					<h1>Pandemic-era submission lag shows signs of improvement</h1>
+
+					<div>
+						<img src="images/distribution_of_delays_by_pandemic_era.png" style="width: 100%" alt="Distribution of sequence submission lags in the pre-pandemic and pandemic eras." />
+					</div>
+				</section>
+
+				<section>
+					<h1>Thank you!</h1>
+
+					<table class="acknowledgments">
+					<tr>
+						<td>
+							<p>Fred&nbsp;Hutch&nbsp;Cancer&nbsp;Center</p>
+
+							<ul>
+								<li>Trevor&nbsp;Bedford</li>
+							</ul>
+
+							<p>Data Sources</p>
+
+							<ul>
+								<li>GISAID EpiFlu database</li>
+								<li>WHO GISRS Network</li>
+							</ul>
+						</td>
+						<td>
+							<p>Funding</p>
+							<ul>
+								<li>NIH/NIAID R01 AI165821-01</li>
+								<li>NIAID Centers of Excellence for Influenza Research and Response (CEIRR)</li>
+							</ul>
+						</td>
+					</tr>
+					</table>
+				</section>
+
+				<section>
+					<h1>Continue the conversation</h1>
+
+					<div>
+						<p>By email at <a href="mailto:jhuddles@fredhutch.org">jhuddles@fredhutch.org</a></p>
+						<p>Or at <a href="https://mstdn.science/@huddlej">https://mstdn.science/@huddlej</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+			});
+		</script>
+	</body>
+</html>
