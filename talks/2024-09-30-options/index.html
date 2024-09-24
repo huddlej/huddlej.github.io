@@ -37,7 +37,7 @@
 				</section>
 
 				<section>
-					<h1>New vaccines take approximately 9 months to make and distribute</h1>
+					<h1>Vaccine strain selection requires a prediction of what will circulate 12 months in the future</h1>
 
 					<div><img src="images/vaccine-development-timeline.png" style="width: 100%" /></div>
 
@@ -45,111 +45,134 @@
 				</section>
 
 				<section>
+					<h1>Vaccine strain selection requires a prediction of what will circulate 12 months in the future</h1>
+
+					<div><img src="images/vaccine-development-timeline-with-forecast.png" style="width: 100%" /></div>
+
+					<p class="citation">After Trevor Bedford and <a href="https://doi.org/10.1016/j.tim.2017.09.004">Morris et al. 2018</a></p>
+				</section>
+
+
+				<section>
 					<h1>The Global Influenza Surveillance and Response System tracks influenza year-round</h1>
 
 					<div>
-						<img src="images/GISRS_map.jpg" alt="Map of World Health Organization Global Influenza Surveillance and Response System" />
+						<img src="images/GISRS-map.png" alt="Map of World Health Organization Global Influenza Surveillance and Response System" />
 					</div>
 
 					<div class="citation">
-						<a href="https://www.who.int/influenza/gisrs_laboratory/GISRS_map.jpg?ua=1">World Health Organization</a>
+						<a href="https://www.who.int/initiatives/global-influenza-surveillance-and-response-system">World Health Organization</a>
 					</div>
 				</section>
 
 				<section>
-					<h2>Models estimate future populations by projecting forward current populations</h2>
+					<h1>Vaccine strain selection depends on the current genetic diversity of hemagglutinin</h1>
+
+					<div>
+						<img src="images/current-h3n2-ha-diversity.png" alt="Phylogeny of hemagglutinin sequences collected between September 2022 and September 2024 colored by clade assignment." />
+					</div>
+
+					<div class="citation">
+						<a href="https://nextstrain.org/seasonal-flu/h3n2/ha/2y@2024-09-20">https://nextstrain.org/seasonal-flu/h3n2/ha/2y@2024-09-20</a>
+					</div>
+				</section>
+
+				<section>
+					<h1>Forecasting models predict future populations by projecting forward current populations</h1>
 
 					<div><img src="images/distance-based-fitness-model-step-00.png" style="margin: 0; width: 80%" /></div>
 
 					<div class="citation">
-						Huddleston et al. 2020
+						<a href="https://bedford.io/papers/huddleston-flu-forecasting/">Huddleston et al. 2020</a>
 					</div>
 				</section>
 
               	<section>
-					<h2>Models estimate future populations by projecting forward current populations</h2>
+					<h1>Forecasting models predict future populations by projecting forward current populations</h1>
 
 					<div><img src="images/distance-based-fitness-model-step-01.png" style="margin: 0; width: 80%" /></div>
 
 					<div class="citation">
-						Huddleston et al. 2020
+						<a href="https://bedford.io/papers/huddleston-flu-forecasting/">Huddleston et al. 2020</a>
 					</div>
 				</section>
 
 				<section>
-					<section>
-						<h2>Models estimate future populations by projecting forward current populations</h2>
+					<h1>Forecasting models predict future populations by projecting forward current populations</h1>
 
-						<div><img src="images/distance-based-fitness-model-step-02.png" style="margin: 0; width: 80%" /></div>
+					<div><img src="images/distance-based-fitness-model-step-02.png" style="margin: 0; width: 80%" /></div>
 
-						<div class="citation">
-							Huddleston et al. 2020
-						</div>
-					</section>
-
-					<section>
-						<h1>Virus populations grow exponentially by fitness</h1>
-
-						<div>
-							<img src="images/comparison-of-fitness-effects.svg" alt="comparison of strains with different relative fitnesses over time" style="width: 100%" />
-						</div>
-					</section>
+					<div class="citation">
+						<a href="https://bedford.io/papers/huddleston-flu-forecasting/">Huddleston et al. 2020</a>
+					</div>
 				</section>
 
 				<section>
-					<h2>Models estimate future populations by projecting forward current populations</h2>
+					<h1>Models minimize genetic distance between predicted and observed future populations</h1>
+
+					<div><img src="images/distance-based-fitness-model-step-02.png" style="margin: 0; width: 80%" /></div>
+
+					<div class="citation">
+						<a href="https://bedford.io/papers/huddleston-flu-forecasting/">Huddleston et al. 2020</a>
+					</div>
+				</section>
+
+				<section>
+					<h1>Models also produce clade frequency forecasts</h1>
 
 					<div><img src="images/distance-based-fitness-model-step-03.png" style="margin: 0; width: 80%" /></div>
 
 					<div class="citation">
-						Huddleston et al. 2020
+						<a href="https://bedford.io/papers/huddleston-flu-forecasting/">Huddleston et al. 2020</a>
 					</div>
 				</section>
 
 				<section>
-					<h2>Models estimate future populations by projecting forward current populations</h2>
+					<section>
+						<h1>Differences between predicted and observed clade frequencies reflect model accuracy</h1>
 
-					<div><img src="images/distance-based-fitness-model.png" style="margin: 0; width: 80%" /></div>
+						<div><img src="images/distance-based-fitness-model.png" style="margin: 0; width: 80%" /></div>
 
-					<div class="citation">
-						Huddleston et al. 2020
-					</div>
+						<div class="citation">
+							<a href="https://bedford.io/papers/huddleston-flu-forecasting/">Huddleston et al. 2020</a>
+						</div>
+					</section>
+
+					<section>
+						<h1>Earth mover's distance accounts for frequency and genetic distance between populations</h1>
+
+						<div>
+							<img src="images/earth-movers-distance-with-flow.svg" alt="example of earth mover's distance flow between two influenza populations" style="width: 65%" />
+						</div>
+
+						<div class="citation">
+							Rubner et al. 1998
+						</div>
+					</section>
+
+					<section>
+						<h1>Accurate forecasts minimize earth mover's distance between populations</h1>
+
+						<div>
+							<img src="images/earth-movers-distance-with-forecast.svg" alt="example of earth mover's distance flow between estimated and observed future influenza populations" style="width: 65%" />
+						</div>
+					</section>
 				</section>
 
 				<section>
-					<h1>Earth mover's distance accounts for frequency and genetic distance between populations</h1>
-
-					<div>
-						<img src="images/earth-movers-distance-with-flow.svg" alt="example of earth mover's distance flow between two influenza populations" style="width: 65%" />
-					</div>
-
-					<div class="citation">
-						Rubner et al. 1998
-					</div>
-				</section>
-
-				<section>
-					<h1>Accurate forecasts minimize earth mover's distance between populations</h1>
-
-					<div>
-						<img src="images/earth-movers-distance-with-forecast.svg" alt="example of earth mover's distance flow between estimated and observed future influenza populations" style="width: 65%" />
-					</div>
-				</section>
-
-				<section>
-					<h1>Time-series cross-validation enables test of model accuracy with out-of-sample forecasts</h1>
+					<h1>We originally trained models in sliding windows through historical H3N2 data</h1>
 
 					<div>
 						<img src="images/training-validation-and-testing.png" alt="training, validation, and testing for forecasting models" />
 					</div>
 
 					<div class="citation">
-						Huddleston et al. 2020
+						<a href="https://bedford.io/papers/huddleston-flu-forecasting/">Huddleston et al. 2020</a>
 					</div>
 				</section>
 
 				<section>
-					<h1>In the past, we have trained models ignoring lags in sequence availability</h1>
+					<h1>In the past, we trained forecasting models ignoring lags in sequence availability</h1>
 
 					<div>
 						<img src="images/submissions_no_lag_only.png" style="width: 85%" alt="" />
@@ -157,7 +180,7 @@
 				</section>
 
 				<section>
-					<h1>In practice, sequence availability lags by ~3 months on average</h1>
+					<h1>The prepandemic lag between sample collection and sequence submission averaged ~3 months</h1>
 
 					<div>
 						<img src="images/submissions_observed.png" style="width: 85%" alt="" />
@@ -165,7 +188,18 @@
 				</section>
 
 				<section>
-					<h1>What if we could reduce forecast horizons to less than 12 months?</h1>
+					<h1>The SARS-CoV-2 pandemic showed realistic changes that we could achieve for influenza</h1>
+
+					<div>
+						<ol>
+							<li>SARS-CoV-2 vaccine strain selection happens 3-6 months before vaccines become available</li>
+							<li>Pandemic-era funding and capacity for surveillance reduced sequence submission lags to a ~1 month average</li>
+						</ol>
+					</div>
+				</section>
+
+				<section>
+					<h1>How much could we improve our forecasts by reducing the forecast horizon?</h1>
 
 					<div>
 						<img src="images/horizons.png" style="width: 85%" alt="" />
@@ -173,7 +207,15 @@
 				</section>
 
 				<section>
-					<h1>What if we could reduce submission lags to SARS-CoV-2 era?</h1>
+					<h1>How does sequence submission lag affect forecast accuracy?</h1>
+
+					<div>
+						<img src="images/submissions_observed.png" style="width: 85%" alt="" />
+					</div>
+				</section>
+
+				<section>
+					<h1>How does sequence submission lag affect forecast accuracy?</h1>
 
 					<div>
 						<img src="images/submissions_realistic.png" style="width: 85%" alt="" />
@@ -181,7 +223,7 @@
 				</section>
 
 				<section>
-					<h1>What if we could reduce submission lags to SARS-CoV-2 era?</h1>
+					<h1>How much could we improve forecasts by reducing sequence submission lags?</h1>
 
 					<div>
 						<img src="images/submissions_ideal.png" style="width: 85%" alt="" />
@@ -189,10 +231,66 @@
 				</section>
 
 				<section>
-					<h1>To test these effects, we forecasted with different forecast and submission lags</h1>
+					<h1>We tested forecasts for each combination of forecast horizon and submission lag</h1>
 
 					<div>
 						<img src="images/horizons_and_delays.png" style="width: 85%" alt="" />
+					</div>
+				</section>
+
+				<section>
+					<h1>Reducing submission lags improves estimates of current clade frequencies</h1>
+
+					<div>
+						<img src="images/h3n2_current_clade_frequency_errors_overall_realistic_only.png" style="width: 100%" alt="Current clade frequencies without sequence submission lag (x-axis) compared to ideal lag (left, y-axis) and realistic lag (right, y-axis)." />
+					</div>
+				</section>
+
+				<section>
+					<h1>Reducing submission lags improves estimates of current clade frequencies</h1>
+
+					<div>
+						<img src="images/h3n2_current_clade_frequency_errors_overall.png" style="width: 100%" alt="Current clade frequencies without sequence submission lag (x-axis) compared to ideal lag (left, y-axis) and realistic lag (right, y-axis)." />
+					</div>
+				</section>
+
+				<section>
+					<h1>Reducing submission lags improves estimates of current clade frequencies</h1>
+
+					<div>
+						<img src="images/h3n2_current_clade_frequencies_small_and_realistic.png" style="width: 100%" alt="Distribution of current clade frequencies errors for small clades (&lt;10%) with ideal (orange) or realistic (green) sequence submission lags." />
+					</div>
+				</section>
+
+				<section>
+					<h1>Reducing submission lags improves estimates of current clade frequencies</h1>
+
+					<div>
+						<img src="images/h3n2_current_clade_frequencies_small_and_ideal.png" style="width: 100%" alt="Distribution of current clade frequencies errors for small clades (&lt;10%) with ideal (orange) or realistic (green) sequence submission lags." />
+					</div>
+				</section>
+
+				<section>
+					<h1>Reducing submission lags improves estimates of current clade frequencies</h1>
+
+					<div>
+						<img src="images/h3n2_current_clade_frequencies_large_and_realistic.png" style="width: 100%" alt="Distribution of current clade frequencies errors for small clades (&lt;10%) with ideal (orange) or realistic (green) sequence submission lags." />
+					</div>
+				</section>
+
+				<section>
+					<h1>Reducing submission lags improves estimates of current clade frequencies</h1>
+
+					<div>
+						<img src="images/h3n2_current_clade_frequencies_large_and_ideal.png" style="width: 100%" alt="Distribution of current clade frequencies errors for small clades (&lt;10%) with ideal (orange) or realistic (green) sequence submission lags." />
+					</div>
+				</section>
+
+				<section>
+					<h1>Reducing forecast horizons increases accuracy and precision of clade frequency forecasts</h1>
+
+					<div>
+						<img src="images/h3n2_absolute_clade_frequency_errors.png" style="width: 100%" alt="Distribution of current clade frequencies errors for large clades (&ge;10%) with ideal (orange) or realistic (green) sequence submission lags." />
 					</div>
 				</section>
 
@@ -205,42 +303,10 @@
 				</section>
 
 				<section>
-					<h1>Reducing submission lags improves estimates of current clade frequencies</h1>
-
-					<div>
-						<img src="images/h3n2_all_current_frequency_errors_by_delay.png" style="width: 100%" alt="Current clade frequencies without sequence submission lag (x-axis) compared to ideal lag (left, y-axis) and realistic lag (right, y-axis)." />
-					</div>
-				</section>
-
-				<section>
-					<h1>Reducing submission lags improves estimates of current clade frequencies</h1>
-
-					<div>
-						<img src="images/h3n2_current_frequency_error_distributions_by_delay_for_small_clades.png" style="width: 100%" alt="Distribution of current clade frequencies errors for small clades (&lt;10%) with ideal (orange) or realistic (green) sequence submission lags." />
-					</div>
-				</section>
-
-				<section>
-					<h1>Reducing submission lags improves estimates of current clade frequencies</h1>
-
-					<div>
-						<img src="images/h3n2_current_frequency_error_distributions_by_delay_for_large_clades.png" style="width: 100%" alt="Distribution of current clade frequencies errors for large clades (&ge;10%) with ideal (orange) or realistic (green) sequence submission lags." />
-					</div>
-				</section>
-
-				<section>
-					<h1>Reducing forecast horizons increases accuracy and precision of clade frequency forecasts</h1>
-
-					<div>
-						<img src="images/h3n2_absolute_forecast_frequency_errors_by_delay_and_horizon_for_large_clades.png" style="width: 100%" alt="Distribution of current clade frequencies errors for large clades (&ge;10%) with ideal (orange) or realistic (green) sequence submission lags." />
-					</div>
-				</section>
-
-				<section>
 					<h1>Faster vaccine selection is the most effective realistic intervention</h1>
 
 					<div>
-						<img src="images/h3n2_effects_of_realistic_interventions.png" style="width: 100%" alt="Effects of realistic interventions on forecast accuracy for H3N2 populations." />
+						<img src="images/h3n2_effects_of_realistic_interventions_on_distances_to_the_future.png" style="width: 100%" alt="Effects of realistic interventions on forecast accuracy for H3N2 populations." />
 					</div>
 				</section>
 
@@ -257,14 +323,14 @@
 
 					<div>
 						<ol>
-							<li>faster vaccine development improves our predictions of the future</li>
-							<li>faster genomic surveillance improves our understanding of the present</li>
+							<li>Faster vaccine development improves our predictions of the future.</li>
+							<li>Faster genomic surveillance improves our understanding of the present.</li>
 						</ol>
 					</div>
 				</section>
 
 				<section>
-					<h1>Pandemic-era submission lag shows signs of improvement</h1>
+					<h1>Pandemic-era submission lag<br />shows signs of improvement</h1>
 
 					<div>
 						<img src="images/distribution_of_delays_by_pandemic_era.png" style="width: 100%" alt="Distribution of sequence submission lags in the pre-pandemic and pandemic eras." />
