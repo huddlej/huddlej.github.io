@@ -51,6 +51,12 @@ section#title p {
     margin-top: 0;
 }
 
+.reveal section p.caption {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+}
+
 .reveal blockquote {
     box-shadow: none;
 }
