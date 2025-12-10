@@ -1,0 +1,133 @@
+.vega {
+    width: 960px;
+    height: 800px;
+}
+
+section#title {
+    color: #000000;
+}
+
+section#title h1 {
+    font-size: 1.75em;
+    color: #000000;
+    font-weight: bold;
+    height: auto;
+}
+
+section#title p {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    font-size: 0.7em;
+}
+
+.reveal h1 {
+    font-size: 1.25em;
+    height: 2.5em;
+}
+
+.reveal h1.narrow {
+    height: auto;
+}
+
+.reveal h2 {
+    font-size: 1.15em;
+}
+
+.reveal h3 {
+    font-size: 1.0em;
+}
+
+.reveal section div {
+    margin-bottom: 1em;
+}
+
+.reveal section div.captioned {
+    margin-bottom: 0em;
+}
+
+.reveal section img {
+    border: none;
+    box-shadow: none;
+    margin-top: 0;
+}
+
+.reveal blockquote {
+    box-shadow: none;
+}
+
+.reveal section ol {
+    margin-top: 1em;
+}
+
+.reveal section li {
+    font-size: 0.75em;
+    margin-bottom: 0.5em;
+}
+
+.reveal section pre {
+    box-shadow: none;
+    font-size: 0.75em;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.thumbnails {
+    margin: auto;
+    width: 65%
+}
+
+.thumbnails p {
+    float: left;
+    margin-bottom: 2em;
+}
+
+.thumbnails img {
+    width: 300px;
+    border-radius: 150px;
+}
+
+.square {
+    width: 100%;
+}
+
+.square p {
+    margin: 0em;
+    width: 240px;
+}
+
+.square img {
+    border-radius: 0px;
+    width: 230px;
+    height: 230px;
+}
+
+.citation {
+	position: absolute;
+	bottom:0px;
+	right:0px;
+	z-index:100;
+	font-size: 0.45em !important;
+}
+
+.acknowledgments p {
+    font-size: 65%;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.acknowledgments ul {
+    margin-left: 0;
+}
+
+.acknowledgments li {
+    font-size: 50%;
+}
+
+.resources li {
+    margin-bottom: 0.5em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
