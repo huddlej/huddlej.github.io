@@ -13,13 +13,13 @@ title: Resume
 ## Professional experience
 
 ### Senior Staff Scientist <small class="text-muted">July 2026 - present</small>
-Fred Hutchinson Cancer Research Center (FHCRC), Seattle, WA
+Fred Hutchinson Cancer Center (FHCC), Seattle, WA
 
 ### Staff Scientist <small class="text-muted">December 2020 - July 2026</small>
-Fred Hutchinson Cancer Research Center (FHCRC), Seattle, WA
+Fred Hutchinson Cancer Center (FHCC), Seattle, WA
 
 ### Graduate Research Assistant <small class="text-muted">September 2016 - December 2020</small>
-University of Washington (UW) / Fred Hutchinson Cancer Research Center (FHCRC), Seattle, WA
+University of Washington (UW) / Fred Hutchinson Cancer Center (FHCC), Seattle, WA
 
  - Design, implement, and draft manuscripts for independent research projects
  - Contribute computational analyses for internal and external collaborations
