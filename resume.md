@@ -12,7 +12,10 @@ title: Resume
 
 ## Professional experience
 
-### Staff Scientist <small class="text-muted">December 2020 - present</small>
+### Senior Staff Scientist <small class="text-muted">July 2026 - present</small>
+Fred Hutchinson Cancer Research Center (FHCRC), Seattle, WA
+
+### Staff Scientist <small class="text-muted">December 2020 - July 2026</small>
 Fred Hutchinson Cancer Research Center (FHCRC), Seattle, WA
 
 ### Graduate Research Assistant <small class="text-muted">September 2016 - December 2020</small>
